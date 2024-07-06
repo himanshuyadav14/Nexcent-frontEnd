@@ -41,26 +41,14 @@ const Hero = () => {
   ];
 
   const [activeScreen, setActiveScreen] = useState(0);
-  const [intervalId, setIntervalId] = useState(null);
 
   useEffect(() => {
-    const id = setInterval(() => {
+    const interval = setInterval(() => {
       setActiveScreen((prev) => (prev === screens.length - 1 ? 0 : prev + 1));
     }, 5000); // Auto-advance every 5 seconds
 
-    setIntervalId(id);
-
-    return () => clearInterval(id);
+    return () => clearInterval(interval);
   }, [screens.length]);
-
-  const handleDotClick = (index) => {
-    setActiveScreen(index);
-    clearInterval(intervalId); // Clear existing interval
-    const id = setInterval(() => {
-      setActiveScreen((prev) => (prev === screens.length - 1 ? 0 : prev + 1));
-    }, 5000); // Restart auto-advance
-    setIntervalId(id); // Store new interval ID
-  };
 
   return (
     <div className="relative h-[599px] max-w-[1440px] mx-auto text-black bg-[#F5F7FA]">
@@ -100,7 +88,7 @@ const Hero = () => {
         <Dots
           screens={screens}
           activeScreen={activeScreen}
-          setActiveScreen={handleDotClick} 
+          setActiveScreen={setActiveScreen}
         />
       </div>
     </div>
