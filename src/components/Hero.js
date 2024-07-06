@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Illustration from "./Illustration";
+import Illustration from "../Assets/Illustration";
 
-import Dots from "./Dots";
+import Dots from "../Assets/Dots";
 
-import Illustration2 from "./Illustration2.png";
-import Illustration3 from "./Illustration3.png";
+import Illustration2 from "../Assets/Illustration2.png";
+import Illustration3 from "../Assets/Illustration3.png";
 
 const Hero = () => {
   const screens = [
