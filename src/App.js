@@ -1,9 +1,15 @@
-import React from 'react';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <div className="bg-[#F5F7FA]">
+        <Navbar />
+        <Hero/>
+      </div>
+     
     </div>
   );
 }
