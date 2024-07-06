@@ -6,7 +6,7 @@ import Rectangle from "../Assets/Community/Rectangle.js";
 
 const Community = () => {
   return (
-    <div className="w-[1440px] h-[416px] mt-4 mx-auto">
+    <div className="w-[1440px] h-[416px] mt-10 mx-auto">
       <div className="flex flex-col justify-center items-center w-[542px] h-[120px] mx-auto">
         <div className="text-[36px] font-semibold text-[#4d4d4d] leading-[44px]">
           Manage your entire community
