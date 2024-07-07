@@ -69,80 +69,74 @@ const Achievements = () => {
   }, []);
 
   return (
-    <div className="w-[1440px] h-[288px] mx-auto dark:bg-[#121212]">
-      <div className="flex justify-evenly items-center h-full" ref={achievementsRef}>
-        {/* Left */}
-        <div className="w-[540px] h-[120px]">
-          <p className="font-semibold text-[36px] leading-[44px] text-[#4d4d4d] dark:text-white">
-            Helping a local
-          </p>
-          <p className="font-semibold text-[36px] leading-[44px] text-[#4caf4f]">
-            business reinvent itself
-          </p>
-          <p className="font-normal text-[16px] leading-[24px] text-[#717171] mt-4 dark:text-white">
-            we reached here with our dedication and hardwork
-          </p>
-        </div>
-
-        {/* Right */}
-        <div className="w-[540px] h-[160px]">
-          <div className="flex justify-center items-center h-[60px]">
-            {/* First row of achievements */}
-            <div className="flex justify-center items-center w-[255px] gap-3">
-              <div>
-                <img src={A1} alt="" className="w-[45px]" />
-              </div>
-              <div>
-                <div className="font-bold text-[28px] leading-[36px] text-[#18191f] dark:text-white">
-                  {memberCount.toLocaleString()}
-                </div>
-                <div className="font-normal text-[16px] leading-[24px] text-[#717171] dark:text-white">
-                  Members
-                </div>
-              </div>
-            </div>
-            {/* Second row of achievements */}
-            <div className="flex justify-center items-center w-[255px] gap-3">
-              <div>
-                <img src={A2} alt="" className="w-[45px]" />
-              </div>
-              <div>
-                <div className="font-bold text-[28px] leading-[36px] text-[#18191f] dark:text-white">
-                  {clubCount.toLocaleString()}
-                </div>
-                <div className="font-normal text-[16px] leading-[24px] text-[#717171] dark:text-white">
-                  Clubs
-                </div>
-              </div>
-            </div>
+    <div className="w-full mx-auto dark:bg-[#121212]">
+      <div className="max-w-[1440px] mx-auto px-4 py-8 md:py-16">
+        <div className="flex flex-col md:flex-row justify-center items-center" ref={achievementsRef}>
+          {/* Text Section */}
+          <div className="md:w-[540px] mb-8 md:mb-0 text-center md:text-left">
+            <p className="font-semibold text-[24px] leading-[32px] text-[#4d4d4d] dark:text-white">
+              Helping a local
+            </p>
+            <p className="font-semibold text-[24px] leading-[32px] text-[#4caf4f]">
+              business reinvent itself
+            </p>
+            <p className="font-normal text-[16px] leading-[24px] text-[#717171] mt-4 dark:text-white">
+              We reached here with our dedication and hard work.
+            </p>
           </div>
 
-          <div className="flex justify-center items-center mt-10 h-[60px]">
-            {/* Third row of achievements */}
-            <div className="flex justify-center items-center w-[255px] gap-3">
-              <div>
-                <img src={A3} alt="" className="w-[45px]" />
-              </div>
-              <div>
-                <div className="font-bold text-[28px] leading-[36px] text-[#18191f] dark:text-white">
-                  {bookingCount.toLocaleString()}
+          {/* Image and Counts Section */}
+          <div className="md:ml-12 md:w-[720px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+              {/* Members */}
+              <div className="flex items-center justify-center md:justify-start gap-3 mb-6 md:mb-0">
+                <img src={A1} alt="Members Icon" className="w-[30px] md:w-[45px]" />
+                <div className="text-center md:text-left">
+                  <div className="font-bold text-[24px] leading-[36px] text-[#18191f] dark:text-white">
+                    {memberCount.toLocaleString()}
+                  </div>
+                  <div className="font-normal text-[14px] leading-[20px] text-[#717171] dark:text-white">
+                    Members
+                  </div>
                 </div>
-                <div className="font-normal text-[16px] leading-[24px] text-[#717171] dark:text-white">
-                  Bookings
+              </div>
+
+              {/* Bookings */}
+              <div className="flex items-center justify-center md:justify-start gap-3 mb-6 md:mb-0">
+                <img src={A3} alt="Bookings Icon" className="w-[30px] md:w-[45px]" />
+                <div className="text-center md:text-left">
+                  <div className="font-bold text-[24px] leading-[36px] text-[#18191f] dark:text-white">
+                    {bookingCount.toLocaleString()}
+                  </div>
+                  <div className="font-normal text-[14px] leading-[20px] text-[#717171] dark:text-white">
+                    Bookings
+                  </div>
                 </div>
               </div>
-            </div>
-            {/* Fourth row of achievements */}
-            <div className="flex justify-center items-center w-[255px] gap-3">
-              <div>
-                <img src={A4} alt="" className="w-[45px]" />
-              </div>
-              <div>
-                <div className="font-bold text-[28px] leading-[36px] text-[#18191f] dark:text-white">
-                  {paymentCount.toLocaleString()}
+
+              {/* Clubs */}
+              <div className="flex items-center justify-center md:justify-start gap-3 mb-6 md:mb-0">
+                <img src={A2} alt="Clubs Icon" className="w-[30px] md:w-[45px]" />
+                <div className="text-center md:text-left">
+                  <div className="font-bold text-[24px] leading-[36px] text-[#18191f] dark:text-white">
+                    {clubCount.toLocaleString()}
+                  </div>
+                  <div className="font-normal text-[14px] leading-[20px] text-[#717171] dark:text-white">
+                    Clubs
+                  </div>
                 </div>
-                <div className="font-normal text-[16px] leading-[24px] text-[#717171] dark:text-white">
-                  Payments
+              </div>
+
+              {/* Payments */}
+              <div className="flex items-center justify-center md:justify-start gap-3">
+                <img src={A4} alt="Payments Icon" className="w-[30px] md:w-[45px]" />
+                <div className="text-center md:text-left">
+                  <div className="font-bold text-[24px] leading-[36px] text-[#18191f] dark:text-white">
+                    {paymentCount.toLocaleString()}
+                  </div>
+                  <div className="font-normal text-[14px] leading-[20px] text-[#717171] dark:text-white">
+                    Payments
+                  </div>
                 </div>
               </div>
             </div>
