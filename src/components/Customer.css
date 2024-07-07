@@ -1,0 +1,51 @@
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.logo {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+
+.logo-slide {
+    display: flex;
+    justify-content: space-between;
+    animation: slide 20s linear infinite;
+}
+
+.logo-slide>* {
+    margin: 0 20px;
+    /* Adjust margin for spacing between logos */
+}
+
+.logo:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #F5F7FA);
+    content: "";
+    z-index: 2;
+}
+
+.logo:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #f5f7fa);
+    content: "";
+    z-index: 2;
+}
