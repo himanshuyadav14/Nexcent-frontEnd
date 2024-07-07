@@ -33,7 +33,7 @@ const Updates = () => {
                 Creating Streamlined Safeguarding Processes with OneRen
               </p>
               <div className="flex justify-center items-center mt-6">
-                <p className="font-semibold text-[#4caf4f] text-[20px] leading-[28px]">
+                <p className="font-semibold text-[#4caf4f] text-[20px] leading-[28px] mr-2">
                   Readmore
                 </p>
                 <RightArrow />
@@ -54,7 +54,7 @@ const Updates = () => {
                 manage them?
               </p>
               <div className="flex justify-center items-center mt-6">
-                <p className="font-semibold text-[#4caf4f] text-[20px] leading-[28px]">
+                <p className="font-semibold text-[#4caf4f] text-[20px] leading-[28px] mr-2">
                   Readmore
                 </p>
                 <RightArrow />
@@ -75,7 +75,7 @@ const Updates = () => {
                 Revamping the Membership Model with Triathlon Australia
               </p>
               <div className="flex justify-center items-center mt-6">
-                <p className="font-semibold text-[#4caf4f] text-[20px] leading-[28px]">
+                <p className="font-semibold text-[#4caf4f] text-[20px] leading-[28px] mr-2">
                   Readmore
                 </p>
                 <RightArrow />
