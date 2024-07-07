@@ -9,6 +9,7 @@ import Calender from "./components/Calender";
 import Customer from "./components/Customer";
 import Updates from "./components/Updates";
 import Demo from "./components/Demo";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
       <Updates />
       <div className="bg-[#F5F7FA]">
         <Demo />
+      </div>
+      <div className="bg-[#263238]">
+        <Footer />
       </div>
     </div>
   );

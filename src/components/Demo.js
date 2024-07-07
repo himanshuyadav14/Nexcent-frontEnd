@@ -3,7 +3,7 @@ import RightArrow from "../Assets/RightArrow";
 
 const Demo = () => {
   return (
-    <div className="w-[1440px] h-[300px] mx-auto">
+    <div className="w-[1440px] h-[310px] mx-auto pt-3 pb-10">
       <div className="flex flex-col justify-center items-center text-center">
         <div className="w-[887px] h-[152px] mx-auto mt-4">
           <p className="font-semibold text-[64px] leading-[76px] text-[#4d4d4d]">

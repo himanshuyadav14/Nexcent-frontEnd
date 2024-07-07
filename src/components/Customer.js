@@ -6,7 +6,7 @@ import Logo3 from "../Assets/ClientLogos/Logo3";
 import Logo4 from "../Assets/ClientLogos/Logo4";
 import Logo5 from "../Assets/ClientLogos/Logo5";
 import Logo6 from "../Assets/ClientLogos/Logo6";
-import RightArrow from "../Assets/RightArrow"
+import RightArrow from "../Assets/RightArrow";
 
 const Customer = () => {
   return (
@@ -45,9 +45,13 @@ const Customer = () => {
             <Logo4 />
             <Logo5 />
             <Logo6 />
-            <div className='flex justify-between items-center w-[223px]'>
-              <p className='font-semibold text-[20px] leading-[28px] text-[#4caf4f]'>Meet all customers</p>
-              <RightArrow/>
+            <div className="flex justify-between items-center w-[223px]">
+              <a href="#" className="flex items-center">
+                <p className="font-semibold text-[20px] leading-[28px] text-[#4caf4f] mr-2">
+                  Meet all customers
+                </p>
+                <RightArrow />
+              </a>
             </div>
           </div>
         </div>
