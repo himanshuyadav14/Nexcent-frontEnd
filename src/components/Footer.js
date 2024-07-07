@@ -1,4 +1,5 @@
-import React from "react";
+import React,{useContext}from "react";
+import { ThemeContext } from "../ThemeContext";
 import FooterLogo from "../Assets/FooterLogo";
 import Insta from "../Assets/SocialMedia/Insta";
 import Ball from "../Assets/SocialMedia/Ball";
@@ -7,8 +8,9 @@ import Youtube from "../Assets/SocialMedia/Youtube";
 import Email from "../Assets/Email";
 
 const Footer = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   return (
-    <div className="w-[1440px] h-[328px] mx-auto pt-4">
+    <div className="w-[1440px] h-[328px] mx-auto pt-4 dark:bg-[#121212]">
       <div className="flex justify-between items-center mt-8">
         {/* Company Info */}
         <div className="flex flex-col justify-start items-start w-[350px] h-[190px]">

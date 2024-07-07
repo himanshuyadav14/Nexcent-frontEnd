@@ -1,10 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
+import { ThemeContext } from "../ThemeContext";
 import A1 from "../Assets/Counts/A1.png";
 import A2 from "../Assets/Counts/A2.png";
 import A3 from "../Assets/Counts/A3.png";
 import A4 from "../Assets/Counts/A4.png";
 
 const Achievements = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const [memberCount, setMemberCount] = useState(0);
   const [clubCount, setClubCount] = useState(0);
   const [bookingCount, setBookingCount] = useState(0);
@@ -67,17 +69,17 @@ const Achievements = () => {
   }, []);
 
   return (
-    <div className="w-[1440px] h-[288px] mx-auto mt-8">
+    <div className="w-[1440px] h-[288px] mx-auto dark:bg-[#121212]">
       <div className="flex justify-evenly items-center h-full" ref={achievementsRef}>
         {/* Left */}
         <div className="w-[540px] h-[120px]">
-          <p className="font-semibold text-[36px] leading-[44px] text-[#4d4d4d]">
+          <p className="font-semibold text-[36px] leading-[44px] text-[#4d4d4d] dark:text-white">
             Helping a local
           </p>
           <p className="font-semibold text-[36px] leading-[44px] text-[#4caf4f]">
             business reinvent itself
           </p>
-          <p className="font-normal text-[16px] leading-[24px] text-[#717171] mt-4">
+          <p className="font-normal text-[16px] leading-[24px] text-[#717171] mt-4 dark:text-white">
             we reached here with our dedication and hardwork
           </p>
         </div>
@@ -91,10 +93,10 @@ const Achievements = () => {
                 <img src={A1} alt="" className="w-[45px]" />
               </div>
               <div>
-                <div className="font-bold text-[28px] leading-[36px] text-[#18191f]">
+                <div className="font-bold text-[28px] leading-[36px] text-[#18191f] dark:text-white">
                   {memberCount.toLocaleString()}
                 </div>
-                <div className="font-normal text-[16px] leading-[24px] text-[#717171]">
+                <div className="font-normal text-[16px] leading-[24px] text-[#717171] dark:text-white">
                   Members
                 </div>
               </div>
@@ -105,10 +107,10 @@ const Achievements = () => {
                 <img src={A2} alt="" className="w-[45px]" />
               </div>
               <div>
-                <div className="font-bold text-[28px] leading-[36px] text-[#18191f]">
+                <div className="font-bold text-[28px] leading-[36px] text-[#18191f] dark:text-white">
                   {clubCount.toLocaleString()}
                 </div>
-                <div className="font-normal text-[16px] leading-[24px] text-[#717171]">
+                <div className="font-normal text-[16px] leading-[24px] text-[#717171] dark:text-white">
                   Clubs
                 </div>
               </div>
@@ -122,10 +124,10 @@ const Achievements = () => {
                 <img src={A3} alt="" className="w-[45px]" />
               </div>
               <div>
-                <div className="font-bold text-[28px] leading-[36px] text-[#18191f]">
+                <div className="font-bold text-[28px] leading-[36px] text-[#18191f] dark:text-white">
                   {bookingCount.toLocaleString()}
                 </div>
-                <div className="font-normal text-[16px] leading-[24px] text-[#717171]">
+                <div className="font-normal text-[16px] leading-[24px] text-[#717171] dark:text-white">
                   Bookings
                 </div>
               </div>
@@ -136,10 +138,10 @@ const Achievements = () => {
                 <img src={A4} alt="" className="w-[45px]" />
               </div>
               <div>
-                <div className="font-bold text-[28px] leading-[36px] text-[#18191f]">
+                <div className="font-bold text-[28px] leading-[36px] text-[#18191f] dark:text-white">
                   {paymentCount.toLocaleString()}
                 </div>
-                <div className="font-normal text-[16px] leading-[24px] text-[#717171]">
+                <div className="font-normal text-[16px] leading-[24px] text-[#717171] dark:text-white">
                   Payments
                 </div>
               </div>

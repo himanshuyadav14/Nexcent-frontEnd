@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { ThemeContext } from "../ThemeContext";
 import Illustration from "../Assets/Illustration";
 
 import Dots from "../Assets/Dots";
@@ -7,6 +8,7 @@ import Illustration2 from "../Assets/Illustration2.png";
 import Illustration3 from "../Assets/Illustration3.png";
 
 const Hero = () => {
+  const { theme } = useContext(ThemeContext);
   const screens = [
     {
       title: "Lessons and insights",
@@ -51,7 +53,7 @@ const Hero = () => {
   }, [screens.length]);
 
   return (
-    <div className="relative h-[599px] max-w-[1440px] mx-auto text-black bg-[#F5F7FA]">
+    <div className="relative h-[599px] max-w-[1440px] mx-auto text-black bg-[#F5F7FA] dark:bg-[#263238]">
       {/* Content Wrapper */}
       <div className="absolute inset-0 flex justify-center items-center">
         {/* Left and Right Sections */}
@@ -59,7 +61,7 @@ const Hero = () => {
           {/* Left Side */}
           <div className="w-[657px] h-[276px] gap-[32px]">
             <div>
-              <h1 className="font-[600px] text-[64px] text-[#4d4d4d] leading-[76px]">
+              <h1 className="font-[600px] text-[64px] text-[#4d4d4d] dark:text-white leading-[76px]">
                 {screens[activeScreen].title}
               </h1>
               <h2 className="font-[600px] text-[64px] text-[#4caf4f] leading-[76px]">
@@ -67,7 +69,7 @@ const Hero = () => {
               </h2>
             </div>
 
-            <p className="font-[400px] text-[16px] text-[#717171] leading-[24px] mt-[30px]">
+            <p className="font-[400px] text-[16px] text-[#717171] dark:text-white leading-[24px] mt-[30px]">
               {screens[activeScreen].text}
             </p>
 

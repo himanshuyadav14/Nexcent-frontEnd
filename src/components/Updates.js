@@ -1,18 +1,20 @@
-import React from "react";
+import React,{useContext} from "react";
+import { ThemeContext } from "../ThemeContext";
 import M1 from "../Assets/Updates/M1.png";
 import M2 from "../Assets/Updates/M2.png";
 import M3 from "../Assets/Updates/M3.png";
 import RightArrow from "../Assets/RightArrow";
 
 const Updates = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   return (
-    <div className="w-[1440px] h-[506px] mx-auto mt-8 mb-24">
+    <div className="w-[1440px] h-[600px] mx-auto pt-10 pb-30 dark:bg-[#263238]">
       <div className="flex flex-col justify-center items-center">
         <div className="w-[1110px] h-[124px] mx-auto text-center">
-          <h1 className="font-semibold text-[36px] leading-[44px] text-[#4d4d4d]">
+          <h1 className="font-semibold text-[36px] leading-[44px] text-[#4d4d4d] dark:text-white">
             Caring is the new marketing
           </h1>
-          <p className="w-[628px] mx-auto font-normal text-[16px] leading-[24px] text-[#717171] mt-4">
+          <p className="w-[628px] mx-auto font-normal text-[16px] leading-[24px] text-[#717171] mt-4 dark:text-white">
             The Nexcent blog is the best place to read about the latest
             membership insights, trends and more. See who's joining the
             community, read about how our community are increasing their

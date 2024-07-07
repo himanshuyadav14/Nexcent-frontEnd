@@ -1,12 +1,14 @@
-import React from "react";
+import React,{useContext} from "react";
+import { ThemeContext } from "../ThemeContext";
 import RightArrow from "../Assets/RightArrow";
 
 const Demo = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   return (
-    <div className="w-[1440px] h-[310px] mx-auto pt-3 pb-10">
+    <div className="w-[1440px] h-[400px] mx-auto pt-10 pb-10">
       <div className="flex flex-col justify-center items-center text-center">
         <div className="w-[887px] h-[152px] mx-auto mt-4">
-          <p className="font-semibold text-[64px] leading-[76px] text-[#4d4d4d]">
+          <p className="font-semibold text-[64px] leading-[76px] text-[#4d4d4d] dark:text-white">
             Pellentesque suscipit fringilla libero eu.
           </p>
         </div>
