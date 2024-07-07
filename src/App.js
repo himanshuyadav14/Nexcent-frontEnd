@@ -8,6 +8,7 @@ import Achievements from "./components/Achievements";
 import Calender from "./components/Calender";
 import Customer from "./components/Customer";
 import Updates from "./components/Updates";
+import Demo from "./components/Demo";
 
 function App() {
   return (
@@ -20,14 +21,16 @@ function App() {
       <Community />
       <Unlock />
       <div className="bg-[#F5F7FA]">
-        <Achievements/>
+        <Achievements />
       </div>
-      <Calender/>
+      <Calender />
       <div className="bg-[#F5F7FA]">
-        <Customer/>
+        <Customer />
       </div>
-      <Updates/>
-
+      <Updates />
+      <div className="bg-[#F5F7FA]">
+        <Demo />
+      </div>
     </div>
   );
 }
