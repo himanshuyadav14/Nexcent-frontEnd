@@ -26,7 +26,7 @@ const Updates = () => {
             {/* Card1 */}
             <div className="w-full md:w-[368px] h-[366px] relative">
               <img src={M1} alt="" className="w-full h-full object-cover rounded-[8px]" />
-              <div className="absolute bottom-0 left-0 right-0 p-4 md:p-[16px] rounded-b-[8px] bg-[#f5f7fa] shadow-md">
+              <div className="w-[317px] h-[176px] absolute bottom-[-60px] left-1/2 transform -translate-x-1/2 p-4 md:p-[16px] rounded-[8px] bg-[#f5f7fa] shadow-md">
                 <p className="text-center font-semibold text-[18px] md:text-[20px] leading-[24px] md:leading-[28px] text-[#717171]">
                   Creating Streamlined Safeguarding Processes with OneRen
                 </p>
@@ -41,12 +41,11 @@ const Updates = () => {
               </div>
             </div>
             {/* Card2 */}
-            <div className="w-full md:w-[368px] h-[366px] relative mt-8 md:mt-0">
+            <div className="w-full md:w-[368px] h-[366px] relative mt-10 md:mt-0">
               <img src={M2} alt="" className="w-full h-full object-cover rounded-[8px]" />
-              <div className="absolute bottom-0 left-0 right-0 p-4 md:p-[16px] rounded-b-[8px] bg-[#f5f7fa] shadow-md">
+              <div className="w-[317px] h-[176px] absolute bottom-[-60px] left-1/2 transform -translate-x-1/2 p-4 md:p-[16px] rounded-[8px] bg-[#f5f7fa] shadow-md">
                 <p className="text-center font-semibold text-[18px] md:text-[20px] leading-[24px] md:leading-[28px] text-[#717171]">
-                  What are your safeguarding responsibilities and how can you
-                  manage them?
+                What are your safeguarding responsibilities and how can you manage them?
                 </p>
                 <div className="flex justify-center items-center mt-2 md:mt-4">
                   <a href="#" className="flex items-center">
@@ -59,11 +58,11 @@ const Updates = () => {
               </div>
             </div>
             {/* Card3 */}
-            <div className="w-full md:w-[368px] h-[366px] relative mt-8 md:mt-0">
+            <div className="w-full md:w-[368px] h-[366px] relative mt-10 md:mt-0">
               <img src={M3} alt="" className="w-full h-full object-cover rounded-[8px]" />
-              <div className="absolute bottom-0 left-0 right-0 p-4 md:p-[16px] rounded-b-[8px] bg-[#f5f7fa] shadow-md">
+              <div className="w-[317px] h-[176px] absolute bottom-[-60px] left-1/2 transform -translate-x-1/2 p-4 md:p-[16px] rounded-[8px] bg-[#f5f7fa] shadow-md">
                 <p className="text-center font-semibold text-[18px] md:text-[20px] leading-[24px] md:leading-[28px] text-[#717171]">
-                  Revamping the Membership Model with Triathlon Australia
+                Revamping the Membership Model with Triathlon Australia
                 </p>
                 <div className="flex justify-center items-center mt-2 md:mt-4">
                   <a href="#" className="flex items-center">

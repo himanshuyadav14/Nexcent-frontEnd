@@ -19,7 +19,7 @@ const Customer = () => {
         
         <div className="w-full md:w-[748px] md:h-[324px] flex flex-col justify-center items-center md:ml-8">
           <div className="text-center md:text-left">
-            <p className="font-[500px] text-[16px] leading-[24px] text-[#717171]">
+            <p className="font-[500px] text-[16px] leading-[24px] text-[#717171] dark:text-white">
               “We have enjoyed working with the JustGo system to setup and go
               live with our new membership platform. The initial effort to
               organise it along the lines of how our sport currently works was
@@ -32,7 +32,7 @@ const Customer = () => {
             <h2 className="font-semibold text-[20px] leading-[28px] text-[#4caf4f] mt-4">
               Tim Smith
             </h2>
-            <p className="font-normal text-[16px] text-[#89939E] leading-[24px] mt-2">
+            <p className="font-normal text-[16px] text-[#89939E] leading-[24px] mt-2 dark:text-white">
               British Dragon Boat Racing Association
             </p>
           </div>
